@@ -19,7 +19,6 @@ import {
 } from '@chakra-ui/react';
 import { Box } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react'
-import { useMetaMask } from "metamask-react";
 
 const originalColors = ['#c27a74', '#2f2a22', '#2f2a22', '#c27a74', '#c27a74', '#c27a74', '#c27a74', '#c27a74'];
 const originalPages = [{ text: "Section 1" }, { text: "Section 2" }, { text: "Section 3" }];
@@ -29,29 +28,8 @@ const App = () => {
     const [sectionsColor, setsectionsColor] = useState([...originalColors]),
      [fullpages, setfullpages] = useState([...originalPages]);
     const { isOpen, onToggle } = useDisclosure();
-    const { status, connect, account, chainId, ethereum } = useMetaMask();
-debugger;
 
-    if (status === "initializing"){
-      console.log("Synchronisation with MetaMask ongoing...");
-    }
-    if (status === "unavailable"){
-      console.log("MetaMask not available :(");
-    }
-
-    if (status === "notConnected"){
-      console.log("Connect to MetaMask");
-    } 
-
-    if (status === "connecting"){
-      console.log("Connecting...");
-    }
-
-    if (status === "connected"){
-      console.log("Connected account: '" + account + "' on chain ID: '" + chainId + "'");
-    }
-
-    const onLeave = (origin, destination, direction) => {
+    const onLeave = (origin: any, destination: any, direction: any) => {
         console.log("onLeave", { origin, destination, direction });
         if(destination.index == 2){
           setTimeout(onToggle,500);
@@ -62,8 +40,8 @@ debugger;
         }
     }
 
-  function moveTo(q) {
-    fullpage_api.moveTo(2); return null;
+  function moveTo(q: any) {
+    //fullpage_api.moveTo(2); return null;
   }
 
   const Menu = () => (
@@ -230,7 +208,7 @@ debugger;
                           <h2>
                             <AccordionButton _expanded={{ bg: '#C0000011' }}>
                               <Box flex='1' textAlign='left'>
-                                WHY SHALL I TRUST THIS? I DON'T KNOW WHO YOU ARE
+                                WHY SHALL I TRUST THIS? I DON&apos;T KNOW WHO YOU ARE
                               </Box>
                               <AccordionIcon />
                             </AccordionButton>
@@ -242,7 +220,7 @@ debugger;
                           <h2>
                             <AccordionButton _expanded={{ bg: '#C0000011' }}>
                               <Box flex='1' textAlign='left'>
-                                Can't you take straight my normal money?
+                                Can&apos;t you take straight my normal money?
                               </Box>
                               <AccordionIcon />
                             </AccordionButton>
@@ -272,7 +250,7 @@ debugger;
                           <h2>
                             <AccordionButton _expanded={{ bg: '#C0000011' }}>
                               <Box flex='1' textAlign='left'>
-                                Why shall I trust this? I don't know who you are.
+                                Why shall I trust this? I don&apos;t know who you are.
                               </Box>
                               <AccordionIcon />
                             </AccordionButton>
@@ -286,7 +264,7 @@ debugger;
                           <h2>
                             <AccordionButton _expanded={{ bg: '#C0000011' }}>
                               <Box flex='1' textAlign='left'>
-                                Q: Why shall I trust this? I don't know crypto neither nftS.
+                                Q: Why shall I trust this? I don&apos;t know crypto neither nftS.
                               </Box>
                               <AccordionIcon />
                             </AccordionButton>
@@ -303,8 +281,8 @@ debugger;
                     </Text>
                     <br />
                     <Text fontSize='xl'>We are 2 founders and some early adopters</Text>
-                    <Text fontSize='xl'>Founder1 - Goldsmith and manufacturing </Text>
-                    <Text fontSize='xl'>Founder2 - Digital engineering</Text>
+                    <Text fontSize='xl'>Founder1 - physical Goldsmithing</Text>
+                    <Text fontSize='xl'>Founder2 - digital Engineering</Text>
                     <br />
                     <Text fontSize='xl'>
                       🌍 Frankfurt am Main - Germany
