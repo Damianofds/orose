@@ -2,8 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Cormorant', serif !important;
+  text-align: center;
+}
+
+h1, h2, h3 , h4, h5, h6 {
+  font-family: 'Dosis', sans-serif !important;
 }
 
 a {
@@ -23,4 +27,29 @@ a {
     color: white;
     background: black;
   }
+}
+
+.section{
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.jewel-type{
+  padding-top: 5%;
+  color: #d5ae1f;
+}
+
+.orose-title{
+  font-style: italic;
+}
+
+#section3{
+  background-image: url(/collection-bkg.png);
+  background-size: 800px;
+}
+
+#section5{
+  /* background-image: url(/collection-bkg.png);
+  background-size: 800px; */
+  text-align: left;
 }
