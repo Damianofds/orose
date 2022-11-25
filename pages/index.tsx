@@ -41,7 +41,7 @@ const App = () => {
     }
 
   function moveTo(q: any) {
-    //fullpage_api.moveTo(2); return null;
+    fullpage_api.moveTo(2); return null;
   }
 
   const Menu = () => (
@@ -57,19 +57,19 @@ const App = () => {
         zIndex: 100,
         backgroundColor: "#c27a74",
       }}>
-      <a onClick={moveTo} href="#" data-menuanchor='home'>
+      <a onClick={() => fullpage_api.moveTo(1)} href="#" data-menuanchor='home'>
         HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </a>
-      <a onClick={moveTo} href="#collection" data-menuanchor='collection'>
+      <a onClick={() => fullpage_api.moveTo(2)} href="#collection" data-menuanchor='collection'>
         COLLECTION PREVIEW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </a>
-      <a onClick={moveTo} href="#userJourney" data-menuanchor='userJourney'>
+      <a onClick={() => fullpage_api.moveTo(3)} href="#userJourney" data-menuanchor='userJourney'>
         USER JOURNEY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </a>
-      <a onClick={moveTo} href="#faq" data-menuanchor='faq'>
+      <a onClick={() => fullpage_api.moveTo(4)} href="#faq" data-menuanchor='faq'>
         FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </a>
-      <a onClick={moveTo} href="#contacts" data-menuanchor='contacts'>
+      <a onClick={() => fullpage_api.moveTo(5)} href="#contacts" data-menuanchor='contacts'>
         CONTACTS
       </a>
       <br />
@@ -84,6 +84,9 @@ const App = () => {
         <Head>
           <title>✨ Oros&#232; collection💍💎📿</title>
           <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" />
+
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+          <link rel="manifest" href="/site.webmanifest"></link>
         </Head>
         <Menu />
         <ReactFullpage
