@@ -20,13 +20,13 @@ import {
 import { Box } from '@chakra-ui/react';
 import { useDisclosure } from '@chakra-ui/react'
 
-const originalColors = ['#c27a74', '#2f2a22', '#2f2a22', '#c27a74', '#c27a74', '#c27a74', '#c27a74', '#c27a74'];
-const originalPages = [{ text: "Section 1" }, { text: "Section 2" }, { text: "Section 3" }];
+const originalColors = ['#c27a74', '#2f2a22', '#2f2a22', '#c27a74', '#c27a74'];
 const anchors =   ["home","collection","userJourney","faq","contacts"];
 
 const App = () => {
     const [sectionsColor, setsectionsColor] = useState([...originalColors]),
-     [fullpages, setfullpages] = useState([...originalPages]);
+     [sectionsAnchor, setsectionsAnchor] = useState([...anchors]),
+     [fullpages, setfullpages] = useState([...anchors]);
     const { isOpen, onToggle } = useDisclosure();
 
     const onLeave = (origin: any, destination: any, direction: any) => {
@@ -40,62 +40,61 @@ const App = () => {
         }
     }
 
-  function moveTo(q: any) {
-    fullpage_api.moveTo(2); return null;
-  }
-
-  const Menu = () => (
-    <div
-      id="menu"
-      className="menu"
-      style={{
-        position: "absolute",
-        left: "0px",
-        right: "0px",
-        top: 0,
-        height: "70px",
-        zIndex: 100,
-        backgroundColor: "#c27a74",
-      }}>
-      <a onClick={() => fullpage_api.moveTo(1)} href="#" data-menuanchor='home'>
-        HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </a>
-      <a onClick={() => fullpage_api.moveTo(2)} href="#collection" data-menuanchor='collection'>
-        COLLECTION PREVIEW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </a>
-      <a onClick={() => fullpage_api.moveTo(3)} href="#userJourney" data-menuanchor='userJourney'>
-        USER JOURNEY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </a>
-      <a onClick={() => fullpage_api.moveTo(4)} href="#faq" data-menuanchor='faq'>
-        FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </a>
-      <a onClick={() => fullpage_api.moveTo(5)} href="#contacts" data-menuanchor='contacts'>
-        CONTACTS
-      </a>
-      <br />
-      <Center h='40px' color='white'>
-        <Image src="/orose-logo.png" h='8' w='15'/>
-      </Center>
-    </div>
-  );
-
     return (
               <div className="App">
-        <Head>
-          <title>✨ Oros&#232; collection💍💎📿</title>
-          <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" />
+                  <Head>
+                    <title>✨ Oros&#232; collection💍💎📿</title>
+                    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+                  </Head>
+                  <ReactFullpage
+                    navigation
+                    // scrollHorizontally = {true}
+                    onLeave={onLeave}
+                    sectionsColor={sectionsColor}
+                    anchors={sectionsAnchor}
+                    render={comp =>
+                      (
+                      
+                    <>
+                      <div
+                          id="menu"
+                          className="menu"
+                          style={{
+                            position: "absolute",
+                            left: "0px",
+                            right: "0px",
+                            top: 0,
+                            height: "70px",
+                            zIndex: 100,
+                            backgroundColor: "#c27a74",
+                          }}>
+                          <a onClick={() => comp.fullpageApi.moveTo("home",1)} href="#" data-menuanchor='home'>
+                            HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </a>
+                          <a onClick={() => comp.fullpageApi.moveTo("collection",1)} href="#collection" data-menuanchor='collection'>
+                            COLLECTION PREVIEW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </a>
+                          <a onClick={() => comp.fullpageApi.moveTo("userJourney",1)} href="#userJourney" data-menuanchor='userJourney'>
+                            USER JOURNEY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </a>
+                          <a onClick={() => comp.fullpageApi.moveTo("faq",1)} href="#faq" data-menuanchor='faq'>
+                            FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          </a>
+                          <a onClick={() => comp.fullpageApi.moveTo("contacts",1)} href="#contacts" data-menuanchor='contacts'>
+                            CONTACTS
+                          </a>
+                          <br />
+                          <Center h='40px' color='white'>
+                            <Image src="/orose-logo.png" h='8' w='15'/>
+                          </Center>
+                      </div>
+                  <ReactFullpage.Wrapper>
+                            
+                            
+                        
 
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-          <link rel="manifest" href="/site.webmanifest"></link>
-        </Head>
-        <Menu />
-        <ReactFullpage
-          navigation
-          // scrollHorizontally = {true}
-          onLeave={onLeave}
-          sectionsColor={sectionsColor}
-          render={comp =>
-            (<ReactFullpage.Wrapper>
+
                   <div key="section1" className="section">
                     <Center>
                       <Image src="/orose-animation.gif"/>
@@ -296,7 +295,7 @@ const App = () => {
                     </Text>
                   </div>
                   
-              </ReactFullpage.Wrapper>
+              </ReactFullpage.Wrapper></>
             )
           }
         />
