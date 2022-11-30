@@ -107,67 +107,67 @@ const App = () => {
                   <div key="section2" className="section">
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>BRACELET</Heading>
-                      <Center><Image src="/bracelet-lisa-line.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>BRACELET</Heading>
-                      <Center><Image src="/bracelet-lisa-circle2.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/bracelet-lisa-black-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>BRACELET</Heading>
-                      <Center><Image src="/bracelet-lisa-circle.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/brecelet-fds-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>COMPOSITION</Heading>
+                      <Center><Image  src="/November2022-Photoshooting/composition-on-mirror-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>EARRINGS</Heading>
-                      <Center><Image src="/earrings.png/" boxSize={450} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image  src="/ring-lisa-vertical.png" boxSize={550} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image  src="/ring-lisa-top.png" boxSize={550} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image src="/ring-lisa-horizontal.png" boxSize={550} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image src="/lisa-gemstone-ring-under.png" boxSize={550} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image src="/lisa-gemstone-ring-horizontal-under.png" boxSize={550} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image src="/lisa-gemstone-ring-horizontal.png" /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image src="/lisa-gemstone-ring-front.png" boxSize={550} /></Center>
-                    </div>
-                    <div className="slide">
-                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
-                      <Center><Image src="/gemstone-ring-lisa-horizontal.png" /></Center>
+                      <Center><Image  src="/November2022-Photoshooting/earrings-first-lisa-pink-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>EARRINGS</Heading>
-                      <Center><Image src="/earrings-lisa-spheres4.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/earrings-lisa-basic-bubbles-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>EARRINGS</Heading>
-                      <Center><Image src="/earrings-lisa-spheres3.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/earrings-lisa-basic-shell-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>EARRINGS</Heading>
-                      <Center><Image src="/earrings-lisa-spheres2.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/earrings-lisa-basic-rescaled.jpg" /></Center>
                     </div>
                     <div className="slide">
                       <Heading fontSize='4xl' className='jewel-type'>EARRINGS</Heading>
-                      <Center><Image src="/earrings-lisa-spheres.png" /></Center>
+                      <Center><Image src="/November2022-Photoshooting/earrings-second-lisa-pink-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>PENDANT</Heading>
+                      <Center><Image src="/November2022-Photoshooting/pendant-maternity-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>PIERCING</Heading>
+                      <Center><Image src="/November2022-Photoshooting/piercing-fds-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
+                      <Center><Image src="/November2022-Photoshooting/ring-lisa-queen-black-hardcore-2-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
+                      <Center><Image src="/November2022-Photoshooting/ring-lisa-queen-black-hardcore-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
+                      <Center><Image src="/November2022-Photoshooting/ring-lisa-queen-green-hardcore-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
+                      <Center><Image src="/November2022-Photoshooting/ring-lisa-queen-of-stones-rescaled.jpg" /></Center>
+                    </div>
+                    <div className="slide">
+                      <Heading fontSize='4xl' className='jewel-type'>RING</Heading>
+                      <Center><Image src="/November2022-Photoshooting/ring-max-king-rescaled.jpg" /></Center>
                     </div>
                     
                     {/* <Text fontSize='2xl'>👨🏽‍🤝‍👨🏻&nbsp;As a fine jewellery collection oros&#232;, each physical element is forged together with its own digital twin.</Text>
