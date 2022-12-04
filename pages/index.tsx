@@ -17,16 +17,17 @@ import {
   Image,
   Center,
   Box,
-  useDisclosure
+  useDisclosure,
+  Flex
 } from '@chakra-ui/react';
-import HomePage from "../components/home-page";
+import { HomePage, HomePage2 } from "../components/home-page";
 import Gallery from "../components/gallery";
 import { UserJourney1, UserJourney2 } from "../components/user-journey";
 import { Faq } from "../components/faq";
 import { Contacts } from "../components/contacts";
 
-const originalColors = ['#c27a74','#2f2a22','#2f2a22','#2f2a22','#c27a74','#c27a74'];
-const anchors =   ["home","collection","userJourney1","userJourney2","faq","contacts"];
+const originalColors = ['#c27a74','#c27a74','#2f2a22','#2f2a22','#2f2a22','#c27a74','#c27a74'];
+const anchors =   ["home","home2","collection","userJourney1","userJourney2","faq","contacts"];
 
 const App = () => {
     const [sectionsColor, setsectionsColor] = useState([...originalColors]),
@@ -54,8 +55,9 @@ const App = () => {
                   </Head>
                   <ReactFullpage
                     navigation
-                    fixedElements="#menu"
+                    menu="#menu"
                     // scrollHorizontally = {true}
+                    scrollOverflow={false}
                     onLeave={onLeave}
                     sectionsColor={sectionsColor}
                     anchors={sectionsAnchor}
@@ -78,7 +80,13 @@ const App = () => {
                           zIndex: 100,
                           backgroundColor: "#c27a74",
                         }}>
-                        <SimpleGrid minChildWidth='50px' spacing={10}>
+                        {/* <SimpleGrid minChildWidth='50px' spacing={10}> */}
+                        <Flex as="nav"
+                              // align="center"
+                              justify="space-between"
+                              // wrap="wrap"
+                              w="80%"
+                              marginLeft="10%">
                           {/* <Box></Box> */}
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("home",1)} href="#home" data-menuanchor='home'>
@@ -87,7 +95,7 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("collection",1)} href="#collection" data-menuanchor='collection'>
-                              PREVIEW
+                              GALLERY
                             </a>
                           </Box>
                           <Box height='80px'>
@@ -106,9 +114,13 @@ const App = () => {
                             </a>
                           </Box>
                           {/* <Box></Box> */}
-                        </SimpleGrid>
+                        {/* </SimpleGrid> */}
+                        </Flex>
                     </div>
                     <HomePage />
+                  </div>
+                  <div key="section12" id="section12" className="section">
+                    <HomePage2 />
                   </div>
                   <div key="section2" id="section2" className="section">
                     <Gallery />

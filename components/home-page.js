@@ -1,7 +1,7 @@
 import React from "react"
 import { Heading, Center, Box } from "@chakra-ui/react"
 
-export default function HomePage(){
+export function HomePage(){
     return(
         <>
             <Center>
@@ -24,7 +24,16 @@ export default function HomePage(){
                     <source src="orose-animation.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <Heading as='h1' size='lg' noOfLines={2}>
+            </Center>
+        </>
+    );
+}
+
+export function HomePage2(){
+    return(
+        <>
+            <Center>
+                <Heading as='h1' size='2xl' noOfLines={2}>
                 ✨ CLAIM YOUR JEWELLS, WEAR YOUR NFTs! 💍💎📿
                 </Heading>
             </Center>
