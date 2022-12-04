@@ -29,11 +29,6 @@ a {
   }
 }
 
-.section{
-  padding-right: 20%;
-  padding-left: 20%;
-}
-
 .jewel-type{
   padding-top: 5%;
   color: #d5ae1f;
@@ -43,13 +38,30 @@ a {
   font-style: italic;
 }
 
-#section3{
+#section1{
+  top: "80px";
+}
+
+#section2{ 
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#section3, #section31{
   background-image: url(/collection-bkg.png);
   background-size: 800px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+
+#section4{
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 #section5{
-  /* background-image: url(/collection-bkg.png);
-  background-size: 800px; */
   text-align: left;
+  padding-right: 10%;
+  padding-left: 10%;
 }
