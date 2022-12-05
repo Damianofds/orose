@@ -24,6 +24,16 @@ export function HomePage(){
                     <source src="orose-animation.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                {/* <div 
+                        data-background-images="{}"
+                        data-background-type="video"
+                        data-video-src="https://www.youtube.com/embed/xDIEGG6aAkk"
+                        data-video-loop="true"
+                        data-video-play-only-visible="true"
+                        data-video-lazy-load="true"data-video-fallback-src="https://www.buccellati.com/media/wysiwyg/1_Cover_221129.jpg"
+                        data-element="wrapper"
+                        data-pb-style="M4OC597"
+                        data-jarallax=""></div> */}
             </Center>
         </>
     );

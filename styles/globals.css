@@ -30,7 +30,7 @@ a {
 }
 
 .jewel-type{
-  padding-top: 5%;
+  /* padding-top: 5%; */
   color: #d5ae1f;
 }
 
@@ -43,8 +43,8 @@ a {
 }
 
 #section2{ 
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 0%;
+  padding-left: 0%;
 }
 
 #section3, #section31{
