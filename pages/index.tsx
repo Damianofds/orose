@@ -20,14 +20,14 @@ import {
   useDisclosure,
   Flex
 } from '@chakra-ui/react';
-import { HomePage, HomePage2 } from "../components/home-page";
+import { HomePage } from "../components/home-page";
 import Gallery from "../components/gallery";
 import { UserJourney1, UserJourney2 } from "../components/user-journey";
 import { Faq } from "../components/faq";
 import { Contacts } from "../components/contacts";
 
-const originalColors = ['#c27a74','#c27a74','#2f2a22','#2f2a22','#2f2a22','#c27a74','#c27a74'];
-const anchors =   ["home","home2","collection","userJourney1","userJourney2","faq","contacts"];
+const originalColors = ['#c27a74','#2f2a22','#2f2a22','#2f2a22','#c27a74','#c27a74'];
+const anchors =   ["home","collection","userJourney1","userJourney2","faq","contacts"];
 
 const App = () => {
     const [sectionsColor, setsectionsColor] = useState([...originalColors]),
@@ -100,7 +100,7 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("userJourney1",1)} href="#userJourney1" data-menuanchor='userJourney1'>
-                              USER JOURNEY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              JOURNEY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
                           </Box>
                           <Box height='80px'>
@@ -118,9 +118,6 @@ const App = () => {
                         </Flex>
                     </div>
                     <HomePage />
-                  </div>
-                  <div key="section12" id="section12" className="section">
-                    <HomePage2 />
                   </div>
                   <div key="section2" id="section2" className="section">
                     <Gallery />

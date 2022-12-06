@@ -1,10 +1,10 @@
-import { Heading, Button, Image } from "@chakra-ui/react"
+import { Heading, Button, Image, Flex, Center } from "@chakra-ui/react"
 
 export default function Gallery() {
     return (
         <>
             <div className="slide">
-                <Heading fontSize='xl' className='jewel-type' style={{
+                {/* <Heading fontSize='xl' className='jewel-type' style={{
                     position: "absolute",
                     marginTop: "-3%"
                 }}>
@@ -13,8 +13,12 @@ export default function Gallery() {
                 <Button style={{
                     position: "absolute",
                     marginTop: "-2.5%"
-                }}>Mint Now!</Button>
-                <Image src="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg" />
+                }}>Mint Now!</Button> */}
+                <Center>
+                    <Flex>
+                        <Image src="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg" />
+                    </Flex>
+                </Center>
             </div>
             <div className="slide">
                 <Image src="/November2022-Photoshooting/bracelet-lisa-black-rescaled.jpg" />

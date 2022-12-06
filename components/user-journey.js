@@ -3,19 +3,24 @@ import { Heading, SimpleGrid, Box, Text} from "@chakra-ui/react"
 export function UserJourney1(){
     return(
         <>
-            <Heading fontSize={'lg'} className='jewel-type'>Start the Web3 experience</Heading>
+            <Heading fontSize={'3xl'} className='jewel-type'>JOIN THE WEB3 EXPERIENCE NOW!</Heading>
             <br />
             <SimpleGrid minChildWidth='150px' spacing={10}>
                 <Box height='150px' backgroundColor={'#c27a74'} padding={'10px'}>
-                    <Heading as='h2' fontSize={'xl'}>Learn the basics of Web3 and crypto</Heading>
-                    <Text fontSize={['sm']}>The wallet your pocket now has a digital twin in your browser</Text> 
+                    <Heading as='h2' fontSize={'xl'}>Discover Web3 and Crypto!</Heading>
+                    <Text fontSize={['sm']}>Cryptos like Ethereum and Bitcoin are making the web a better place for everybody, join the community!</Text> 
                 </Box>
                 <Box height='150px' backgroundColor={'#c27a74'} padding={'10px'}>
-                    <Heading as='h2' fontSize={'xl'}>Open a crypto wallet and put some coins in</Heading>
-                    <Text fontSize={'sm'}>👛 Open a crypto wallet and put some coins in 🪙</Text> 
+                    <Heading as='h2' fontSize={'xl'}>👛Open a wallet and get some coins🪙</Heading>
+                    <Text fontSize={'sm'}>Have you ever thought that one day the wallet in your pocket would get it digital twin in the browser?</Text> 
+                </Box>
+                <Box height='150px' backgroundColor={'#c27a74'} padding={'10px'}>
+                    <Heading as='h2' fontSize={'xl'}>Need help with your first step in Web3?</Heading>
+                    <Text fontSize={'sm'}>Mint one Orose Jewel, you will get Damiano on a private call for helping you making your first crypto transaction!</Text> 
                 </Box>
             </SimpleGrid>
-            <Heading fontSize={'xl'} className='jewel-type'>Already a Web3 user? Scroll down NOW! 👇</Heading>
+            <Heading fontSize={'3xl'} className='jewel-type'>ALREADY KNOW WEB3?</Heading>
+            <Heading fontSize={'3xl'} className='jewel-type'>Scroll down! 👇</Heading>
         </>
     );
 }

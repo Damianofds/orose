@@ -1,10 +1,24 @@
 import React from "react"
-import { Heading, Center, Box } from "@chakra-ui/react"
+import { Heading, Center, Box, position } from "@chakra-ui/react"
 
 export function HomePage(){
     return(
         <>
-            <Center>
+                <Center>
+                <Heading as='h1' size='2xl' noOfLines={2} style={{
+                    position:"absolute",
+                    bottom:"15%"
+                }}>
+                    ✨ CLAIM YOUR JEWELLS, WEAR YOUR NFTs! 💍📿
+                </Heading>
+                <Heading fontSize={'xl'} className='jewel-type' style={{
+                    position:"absolute",
+                    bottom:"10%"
+                }}>
+                    Scroll down for knowing more! 👇
+                </Heading>
+                </Center>
+                <Center>
                 {/* <Image src="/orose-animation.gif"/> */}
                 {/* <Box
                     as='video'
@@ -20,7 +34,7 @@ export function HomePage(){
                         aspectRatio: '16/9'
                     }}
                 /> */}
-                <video controls autoplay muted loop>
+                <video autoPlay muted>
                     <source src="orose-animation.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -35,20 +49,6 @@ export function HomePage(){
                         data-pb-style="M4OC597"
                         data-jarallax=""></div> */}
             </Center>
-        </>
-    );
-}
-
-export function HomePage2(){
-    return(
-        <>
-            <Center>
-                <Heading as='h1' size='2xl' noOfLines={2}>
-                ✨ CLAIM YOUR JEWELLS, WEAR YOUR NFTs! 💍💎📿
-                </Heading>
-            </Center>
-            <br />
-            <Heading fontSize={'xl'} className='jewel-type'>Scroll down for knowing more! 👇</Heading>
         </>
     );
 }
