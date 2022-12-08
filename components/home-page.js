@@ -7,15 +7,15 @@ export function HomePage(){
                 <Center>
                 <Heading as='h1' size='2xl' noOfLines={2} style={{
                     position:"absolute",
-                    bottom:"15%"
+                    bottom:"25%"
                 }}>
                     ✨ CLAIM YOUR JEWELLS, WEAR YOUR NFTs! 💍📿
                 </Heading>
                 <Heading fontSize={'xl'} className='jewel-type' style={{
                     position:"absolute",
-                    bottom:"10%"
+                    bottom:"20%"
                 }}>
-                    Scroll down for knowing more! 👇
+                    Scroll down 👇 Have your first preview tour 🛵
                 </Heading>
                 </Center>
                 <Center>
@@ -34,7 +34,7 @@ export function HomePage(){
                         aspectRatio: '16/9'
                     }}
                 /> */}
-                <video autoPlay muted>
+                <video autoPlay muted width="80%" style={{marginTop:"-10%"}}>
                     <source src="orose-animation.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

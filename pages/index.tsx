@@ -95,12 +95,12 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("collection",1)} href="#collection" data-menuanchor='collection'>
-                              GALLERY
+                              PREVIEW
                             </a>
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("userJourney1",1)} href="#userJourney1" data-menuanchor='userJourney1'>
-                              JOURNEY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              HOW IT WORKS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
                           </Box>
                           <Box height='80px'>
@@ -110,7 +110,7 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("contacts",1)} href="#contacts" data-menuanchor='contacts'>
-                              CONTACTS
+                              PEOPLE
                             </a>
                           </Box>
                           {/* <Box></Box> */}
