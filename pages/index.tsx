@@ -100,7 +100,7 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("userJourney1",1)} href="#userJourney1" data-menuanchor='userJourney1'>
-                              HOW IT WORKS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              MEMBERSHIP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
                           </Box>
                           <Box height='80px'>

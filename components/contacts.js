@@ -1,8 +1,11 @@
-import { Text } from "@chakra-ui/react"
+import { Text, Image } from "@chakra-ui/react"
 
 export function Contacts(){
     return(
         <>
+            <Image src="lisa-bracelet.png" style={{
+                textAlign: 'right'
+            }}/>
             <Text fontSize='xl'>
                 The project will be in stealth mode untill its public launch in Q1 2023                      <br />
             </Text>
