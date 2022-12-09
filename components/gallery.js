@@ -4,21 +4,9 @@ export default function Gallery() {
     return (
         <>
             <div className="slide">
-                {/* <Heading fontSize='xl' className='jewel-type' style={{
-                    position: "absolute",
-                    marginTop: "-3%"
-                }}>
-                    BRACELET - 22 karat - 23 grams
-                </Heading>
-                <Button style={{
-                    position: "absolute",
-                    marginTop: "-2.5%"
-                }}>Mint Now!</Button> */}
-                <Center>
-                    <Flex>
-                        <Image src="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg" />
-                    </Flex>
-                </Center>
+                <Image src="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg" />
+                <Heading fontSize='xl' className='jewel-type'>BRACELET</Heading>
+                <Heading fontSize='xl' className='jewel-type'>22 karat - 23 grams</Heading>
             </div>
             <div className="slide">
                 <Image src="/November2022-Photoshooting/bracelet-lisa-black-rescaled.jpg" />
