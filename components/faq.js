@@ -52,7 +52,7 @@ export function Faq(){
                     </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        If you like our collection but you would like something that is not part of it, let's keep in touch!<br/>
+                        If you like our collection but you would like something that is not part of it, let&apos;s keep in touch!<br/>
                         We will share soon how to get custom design.  
                     </AccordionPanel>
                 </AccordionItem>
@@ -87,7 +87,7 @@ export function Faq(){
                         It will be the cost of material + work + shipping costs.<br/>
                         We make only fine jewellery, using high quality gold 18k or 22k.<br/>
                         Each piece will be handcrafted as a unique item.<br/>
-                        When you don't do any compromises in quality and design, the end price can't be low.<br/>
+                        When you don&apos;t do any compromises in quality and design, the end price can&apos;t be low.<br/>
                         But you pay it with crypto.
                     </AccordionPanel>
                 </AccordionItem>
@@ -100,13 +100,13 @@ export function Faq(){
                     <h2>
                     <AccordionButton _expanded={{ bg: '#C0000011' }}>
                         <Box flex='1' textAlign='left'>
-                            What if I don't know Web3 nor crypto?
+                            What if I don&apos;t know Web3 nor crypto?
                         </Box>
                         <AccordionIcon />
                     </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        If you want to mint or buy one Oros&#232; piece, we will be happy to jump on a call with you and onboard you on Web3 step by step. It's just take 15 minutes of fun :)     
+                        If you want to mint or buy one Oros&#232; piece, we will be happy to jump on a call with you and onboard you on Web3 step by step. It&apos;s just take 15 minutes of fun :)     
                     </AccordionPanel>
                 </AccordionItem>
                 <AccordionItem>
