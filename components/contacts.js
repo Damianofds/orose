@@ -3,7 +3,8 @@ import { Text, Image } from "@chakra-ui/react"
 export function Contacts(){
     return(
         <>
-            <Image src="lisa-bracelet.png" style={{
+            <br/><br/>
+            <Image maxHeight='200px' src="lisa-bracelet.png" style={{
                 textAlign: 'right'
             }}/>
             <Text fontSize='xl'>
@@ -19,7 +20,7 @@ export function Contacts(){
             </Text>
             <br />
             <Text fontSize='xl'>
-                Would you like to JOIN ?<br/>write us at <strong>info@orose.gold</strong> 
+                Would you know more about oros&#232;?<br/>drop an email at<br /><italic>EMAIL COMING SOON :)</italic> 
             </Text>
         </>
     );

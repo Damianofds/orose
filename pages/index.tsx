@@ -26,8 +26,8 @@ import { UserJourney1, UserJourney2 } from "../components/user-journey";
 import { Faq } from "../components/faq";
 import { Contacts } from "../components/contacts";
 
-const originalColors = ['#c27a74','#2f2a22','#2f2a22','#2f2a22','#c27a74','#c27a74'];
-const anchors =   ["home","collection","userJourney1","userJourney2","faq","contacts"];
+const originalColors = ['#c27a74','#2f2a22','#2f2a22','#2f2a22'];
+const anchors =   ["home","collection","faq","contacts"];
 
 const App = () => {
     const [sectionsColor, setsectionsColor] = useState([...originalColors]),
@@ -98,11 +98,11 @@ const App = () => {
                               PREVIEW
                             </a>
                           </Box>
-                          <Box height='80px'>
+                          {/* <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("userJourney1",1)} href="#userJourney1" data-menuanchor='userJourney1'>
                               MEMBERSHIP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
-                          </Box>
+                          </Box> */}
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("faq",1)} href="#faq" data-menuanchor='faq'>
                               FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -110,7 +110,7 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("contacts",1)} href="#contacts" data-menuanchor='contacts'>
-                              PEOPLE
+                              ABOUT US
                             </a>
                           </Box>
                           {/* <Box></Box> */}
@@ -122,12 +122,12 @@ const App = () => {
                   <div key="section2" id="section2" className="section">
                     <Gallery />
                   </div>
-                  <div id="section3" key="section3" className="section">
+                  {/* <div id="section3" key="section3" className="section">
                     <UserJourney1 />
                   </div>
                   <div id="section31" key="section31" className="section">
                     <UserJourney2 />
-                  </div>
+                  </div> */}
                   <div key="section4" id="section4" className="section">
                     <Faq />
                   </div>

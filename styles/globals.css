@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+.fp-watermark{
+  display: none;
+}
+
 h1, h2, h3 , h4, h5, h6 {
   font-family: 'Dosis', sans-serif !important;
 }
@@ -46,11 +50,18 @@ a {
 
 
 #section4{
+  color: #d5ae1f;
+  font-weight: bolder;
+  background-image: url(/collection-bkg.png);
+  background-size: 800px;
   padding-right: 10%;
   padding-left: 10%;
 }
 
 #section5{
+  color: #d5ae1f;
+  background-image: url(/collection-bkg.png);
+  background-size: 800px;
   text-align: left;
   padding-right: 10%;
   padding-left: 10%;

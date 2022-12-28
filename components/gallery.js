@@ -16,48 +16,13 @@ export default function Gallery() {
     return (
         <>
             <div className="slide">
-                <GalleryElement
-                    imgSrc="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg"
-                    details={["BRACELET", "22 karat - 900/1000", "23 grams", "Signature design", "", "King 👑"]} />
-            </div>
-            <div className="slide">
-                <GalleryElement
-                    imgSrc="/November2022-Photoshooting/bracelet-lisa-black-rescaled.jpg"
-                    details={["BRACELET", "22 karat - 900/1000", "23 grams", "Signature design", "", "King 👑"]} />
-            </div>
-            <div className="slide">
             <GalleryElement
                     imgSrc="/November2022-Photoshooting/brecelet-fds-rescaled.jpg"
                     details={["BRACELET", "18 karat - 750/1000", "20 grams", "Signature design", "", "King 👑"]} />
             </div>
             <div className="slide">
-            <GalleryElement
-                    imgSrc="/November2022-Photoshooting/composition-on-mirror-rescaled.jpg"
-                    details={["COMPOSITION", "22 karat - 900/1000", "70 grams", "Signature design", "", "King 👑"]} />
-            </div>
-            <div className="slide">
-                <GalleryElement
-                    imgSrc="/November2022-Photoshooting/earrings-first-lisa-pink-rescaled.jpg"
-                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
-            </div>
-            <div className="slide">
                 <GalleryElement
                     imgSrc="/November2022-Photoshooting/earrings-lisa-basic-bubbles-rescaled.jpg"
-                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
-            </div>
-            <div className="slide">
-                <GalleryElement     
-                    imgSrc="/November2022-Photoshooting/earrings-lisa-basic-shell-rescaled.jpg"
-                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
-            </div>
-            <div className="slide">
-                <GalleryElement
-                    imgSrc="/November2022-Photoshooting/earrings-lisa-basic-rescaled.jpg"
-                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
-            </div>
-            <div className="slide">
-                <GalleryElement
-                    imgSrc="/November2022-Photoshooting/earrings-second-lisa-pink-rescaled.jpg"
                     details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
             </div>
             <div className="slide">
@@ -72,13 +37,28 @@ export default function Gallery() {
             </div>
             <div className="slide">
                 <GalleryElement
-                    imgSrc="/November2022-Photoshooting/ring-lisa-queen-black-hardcore-2-rescaled.jpg"
+                    imgSrc="/November2022-Photoshooting/ring-lisa-queen-black-hardcore-rescaled.jpg"
                     details={["RING", "22 karat - 900/1000", "", "Signature design", "", ""]} />
                 <Image src="" />
             </div>
             <div className="slide">
+                <GalleryElement     
+                    imgSrc="/November2022-Photoshooting/earrings-lisa-basic-shell-rescaled.jpg"
+                    details={["EARRINGS", "18 karat - 750/1000", "", "Signature design", "", ""]} />
+            </div>
+            <div className="slide">
                 <GalleryElement
-                    imgSrc="/November2022-Photoshooting/ring-lisa-queen-black-hardcore-rescaled.jpg"
+                    imgSrc="/November2022-Photoshooting/earrings-lisa-basic-rescaled.jpg"
+                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
+            </div>
+            <div className="slide">
+                <GalleryElement
+                    imgSrc="/November2022-Photoshooting/earrings-second-lisa-pink-rescaled.jpg"
+                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
+            </div>
+            {/* <div className="slide">
+                <GalleryElement
+                    imgSrc="/November2022-Photoshooting/ring-lisa-queen-black-hardcore-2-rescaled.jpg"
                     details={["RING", "22 karat - 900/1000", "", "Signature design", "", ""]} />
                 <Image src="" />
             </div>
@@ -86,7 +66,7 @@ export default function Gallery() {
                 <GalleryElement
                     imgSrc="/November2022-Photoshooting/ring-lisa-queen-green-hardcore-rescaled.jpg"
                     details={["RING", "22 karat - 900/1000", "", "Signature design", "", ""]} />
-            </div>
+            </div> */}
             <div className="slide">
                 <GalleryElement
                     imgSrc="/November2022-Photoshooting/ring-lisa-queen-of-stones-rescaled.jpg"
@@ -96,6 +76,26 @@ export default function Gallery() {
                 <GalleryElement
                     imgSrc="/November2022-Photoshooting/ring-max-king-rescaled.jpg"
                     details={["RING", "22 karat - 900/1000", "", "Signature design", "", ""]} />
+            </div>
+            <div className="slide">
+                <GalleryElement
+                    imgSrc="/November2022-Photoshooting/bracelet-lisa-pink-rescaled.jpg"
+                    details={["BRACELET", "22 karat - 900/1000", "23 grams", "Signature design", "", "King 👑"]} />
+            </div>
+            <div className="slide">
+                <GalleryElement
+                    imgSrc="/November2022-Photoshooting/bracelet-lisa-black-rescaled.jpg"
+                    details={["BRACELET", "22 karat - 900/1000", "23 grams", "Signature design", "", "King 👑"]} />
+            </div>
+            <div className="slide">
+            <GalleryElement
+                    imgSrc="/November2022-Photoshooting/composition-on-mirror-rescaled.jpg"
+                    details={["COMPOSITION", "22 karat - 900/1000", "70 grams", "Signature design", "", "King 👑"]} />
+            </div>
+            <div className="slide">
+                <GalleryElement
+                    imgSrc="/November2022-Photoshooting/earrings-first-lisa-pink-rescaled.jpg"
+                    details={["EARRINGS", "22 karat - 900/1000", "", "Signature design", "", ""]} />
             </div>
             {/* <Text fontSize='2xl'>👨🏽‍🤝‍👨🏻&nbsp;As a fine jewellery collection oros&#232;, each physical element is forged together with its own digital twin.</Text>
             <Text fontSize='2xl'>🌍&nbsp;Each oros&#232; jewel can be wore, shown, bought or sold throughout the physical world as well as in the metaverse.</Text>
@@ -128,9 +128,9 @@ function GalleryElement({ imgSrc, details }) {
                         </PopoverHeader>
                         <PopoverBody>
                             <Heading fontSize='xl' className='jewel-type'>{details[1]}</Heading>
-                            <Heading fontSize='xl' className='jewel-type'>{details[2]}</Heading>
-                            <Heading fontSize='xl' className='jewel-type'>{details[3]}</Heading>
-                            <Heading fontSize='xl' className='jewel-type'>🪙🔨Mint it!</Heading>
+                            {/* <Heading fontSize='xl' className='jewel-type'>{details[2]}</Heading>
+                            <Heading fontSize='xl' className='jewel-type'>{details[3]}</Heading> */}
+                            {/* <Heading fontSize='xl' className='jewel-type'>🪙🔨Mint it!</Heading> */}
                         </PopoverBody>
                     </PopoverContent>
                 </Popover>

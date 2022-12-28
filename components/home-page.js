@@ -15,7 +15,7 @@ export function HomePage() {
                     position: "absolute",
                     bottom: "20%"
                 }}>
-                    Scroll down 👇 Have your first preview tour 🛵
+                    Take a tour 🛵 Scroll down 👇  
                 </Heading>
             </Center>
             <Center>
