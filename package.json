@@ -17,7 +17,7 @@
     "@ethersproject/units": "^5.7.0",
     "@fullpage/react-fullpage": "^0.1.28",
     "@types/node": "18.11.9",
-    "@types/react": "18.0.24",
+    "@types/react": "18.0.27",
     "@types/react-dom": "18.0.8",
     "@web3-react/core": "^6.1.9",
     "@web3-react/eip1193": "^8.0.0-beta.0",
@@ -32,6 +32,7 @@
     "next": "13.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-social-icons": "^5.15.0",
     "typescript": "4.8.4"
   }
 }

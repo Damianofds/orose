@@ -1,38 +1,24 @@
 import Head from 'next/head';
-import { Button, Divider, Heading, List, ListIcon, ListItem, Radio, RadioGroup, ScaleFade, Skeleton, Spacer, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  OrderedList,
-  UnorderedList,
-  Icon,
-  HStack,
-  VStack,
-  SimpleGrid,
   Image,
-  Center,
   Box,
   useDisclosure,
   Flex
 } from '@chakra-ui/react';
-import { HomePage } from "../components/home-page";
+import { HomePage, HomePageA, HomePageB, HomePageC, HomePageD } from "../components/home-page";
 import Gallery from "../components/gallery";
-import { UserJourney1, UserJourney2 } from "../components/user-journey";
 import { Faq } from "../components/faq";
 import { Contacts } from "../components/contacts";
 
-const originalColors = ['#c27a74','#2f2a22','#2f2a22','#2f2a22'];
-const anchors =   ["home","collection","faq","contacts"];
+const originalColors = ['#c27a74','#c27a74','#c27a74','#c27a74','#c27a74','#2f2a22','#2f2a22'];
+const anchors =   ["home","homea","homeb","homec","homed","collection","contacts"];
 
 const App = () => {
     const [sectionsColor, setsectionsColor] = useState([...originalColors]),
-     [sectionsAnchor, setsectionsAnchor] = useState([...anchors]),
-     [fullpages, setfullpages] = useState([...anchors]);
+    [sectionsAnchor, setsectionsAnchor] = useState([...anchors]),
+    [fullpages, setfullpages] = useState([...anchors]);
     const { isOpen, onToggle } = useDisclosure();
 
     const onLeave = (origin: any, destination: any, direction: any) => {
@@ -50,7 +36,8 @@ const App = () => {
               <div className="App">
                   <Head>
                     <title>✨ Oros&#232; collection💍💎📿</title>
-                    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"></link>
+                    {/* <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" /> */}
                     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
                   </Head>
                   <ReactFullpage
@@ -85,12 +72,13 @@ const App = () => {
                               // align="center"
                               justify="space-between"
                               // wrap="wrap"
-                              w="80%"
-                              marginLeft="10%">
+                              w="60%"
+                              marginLeft="20%" 
+                              marginTop='5px'>
                           {/* <Box></Box> */}
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("home",1)} href="#home" data-menuanchor='home'>
-                              <Image src="/orose-logo.png" h='5' w='12.5'/>
+                              <Image src="/orose-logo.png" h='5' w='12.5' />
                             </a>
                           </Box>
                           <Box height='80px'>
@@ -103,11 +91,11 @@ const App = () => {
                               MEMBERSHIP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
                           </Box> */}
-                          <Box height='80px'>
+                          {/* <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("faq",1)} href="#faq" data-menuanchor='faq'>
                               FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </a>
-                          </Box>
+                          </Box> */}
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("contacts",1)} href="#contacts" data-menuanchor='contacts'>
                               ABOUT US
@@ -119,6 +107,18 @@ const App = () => {
                     </div>
                     <HomePage />
                   </div>
+                  <div key="section11" id="section11" className="section">
+                    <HomePageA />
+                  </div>
+                  <div key="section12" id="section12" className="section">
+                    <HomePageB />
+                  </div>
+                  <div key="section13" id="section13" className="section">
+                    <HomePageC />
+                  </div>
+                  <div key="section14" id="section14" className="section">
+                    <HomePageD />
+                  </div>
                   <div key="section2" id="section2" className="section">
                     <Gallery />
                   </div>
@@ -128,9 +128,9 @@ const App = () => {
                   <div id="section31" key="section31" className="section">
                     <UserJourney2 />
                   </div> */}
-                  <div key="section4" id="section4" className="section">
+                  {/* <div key="section4" id="section4" className="section">
                     <Faq />
-                  </div>
+                  </div> */}
                   <div key="section5" id="section5" className="section" style={{textAlign: "center"}}>
                     <Contacts />
                   </div>

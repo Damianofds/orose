@@ -18,7 +18,7 @@ export function Contacts(){
             </Text>
             <br />
             <Text fontSize='xl'>
-                Would you know more about oros&#232;?<br/>drop an email at<br /><italic>EMAIL COMING SOON :)</italic> 
+                Would you know more about oros&#232;?<br/>drop an email at<br /><italic>hi@orose.com</italic> 
             </Text>
         </>
     );
