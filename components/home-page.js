@@ -84,7 +84,7 @@ export function HomePageD() {
     return (
         <>
             <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
-                Let's keep in touch! follow us on Instagram, leave us a like comment and write us in DM.   
+                Let&apos;s keep in touch! follow us on Instagram, leave us a like comment and write us in DM.   
             </Center>
             <Center>
                 <SocialIcon url="https://www.instagram.com/orose.gold" bgColor="#000000" />  
