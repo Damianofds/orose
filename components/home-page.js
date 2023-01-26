@@ -58,10 +58,7 @@ export function HomePageA() {
     return (
         <>
             <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
-                Oros&#232; is a jewel collection,
-            </Center>
-            <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
-                each unique piece is made of physical and digital goldsmith art.
+                Oros&#232; is a jewelry collection, it has gold and NFTs as founding materials.
             </Center>
         </>
     );
@@ -70,7 +67,7 @@ export function HomePageA() {
 export function HomePageB() {
     return (
         <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
-            The journey starts minting the digital jewel, then it can be customized, wore and traded in the metaverse.
+            Each unique piece can be wore at dinner in a reustarant or in a 1 on 1 work call in the metaverse.
         </Center>
     );
 }
@@ -78,7 +75,7 @@ export function HomePageB() {
 export function HomePageC() {
     return (
         <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
-            Whenever you are ready, forge it and wear it in the real world!
+            We are launching on OpenSea our first collection in April 2023, as a first crowfounding round among enthusiast who believe in the project.
         </Center>
     );
 }
@@ -87,10 +84,13 @@ export function HomePageD() {
     return (
         <>
             <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
-                We are launching our first collection in April, in the meanwhile follow us on Instagram!  
+                Let's keep in touch! follow us on Instagram, leave us a like comment and write us in DM.   
             </Center>
             <Center>
                 <SocialIcon url="https://www.instagram.com/orose.gold" bgColor="#000000" />  
+            </Center>
+            <Center style={{fontSize:"clamp(32px, 8vw, 72px)"}} maxW="80vw" marginLeft="10vw">
+                Not into Web2 Social Media? 👉 <a href="mailto:hi@orose.com">hi@orose.com</a> 
             </Center>
         </>
     );
