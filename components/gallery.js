@@ -108,7 +108,7 @@ function GalleryElement({ imgSrc, details }) {
     return (
         <Box style={{position: "relative"}}>
             <AspectRatio minH='100vh' ratio={16 / 9}>
-                <Image src={imgSrc} />
+                <Image src={imgSrc} loading="lazy"/>
             </AspectRatio>
 
             <Box style={{
