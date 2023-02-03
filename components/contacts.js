@@ -4,9 +4,9 @@ export function Contacts(){
     return(
         <>
             <br/><br/>
-            <Image src="lisa-bracelet.png" />
+            {/* <Image src="lisa-bracelet.png"/> */}
             <Text fontSize='xl'>
-                The project will be in stealth mode untill its public launch in Q1 2023                      <br />
+                The project will be in stealth mode untill its public launch in Q2 2023                      <br />
             </Text>
             <br />
             <Text fontSize='xl'>12 Members - our early crypto-jewell-gated community</Text>
@@ -18,7 +18,7 @@ export function Contacts(){
             </Text>
             <br />
             <Text fontSize='xl'>
-                Would you know more about oros&#232;?<br/>drop an email at<br /><italic>hi@orose.com</italic> 
+                <br/>drop us an email at<br /><italic>hi@orose.com</italic> 
             </Text>
         </>
     );

@@ -83,7 +83,7 @@ const App = () => {
                           </Box>
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("collection",1)} href="#collection" data-menuanchor='collection'>
-                              PREVIEW
+                              GALLERY
                             </a>
                           </Box>
                           {/* <Box height='80px'>
