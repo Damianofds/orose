@@ -44,6 +44,7 @@ const App = () => {
                     navigation
                     menu="#menu"
                     // scrollHorizontally = {true}
+                    licenseKey="KYOL9-JJ7GI-5XKE8-JNM36-CROVK"
                     scrollOverflow={false}
                     onLeave={onLeave}
                     sectionsColor={sectionsColor}
