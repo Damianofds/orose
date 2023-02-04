@@ -76,7 +76,7 @@ const App = () => {
                           {/* <Box></Box> */}
                           <Box height='80px'>
                             <a onClick={() => comp.fullpageApi.moveTo("home",1)} href="#home" data-menuanchor='home'>
-                              <Image src="/orose-logo.png" h='5' w='12.5' />
+                              <Image src="/orose-logo.png" h='5' w='12.5' loading="lazy" />
                             </a>
                           </Box>
                           <Box height='80px'>

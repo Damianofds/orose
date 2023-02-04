@@ -7,7 +7,7 @@ export function HomePage() {
     return (
         <>
             <Center>
-                <Image src="/orose-logo.png" w='80vw' maxW='500px'/>
+                <Image src="/orose-logo.png" w='80vw' maxW='500px' loading="lazy"/>
             </Center>
             <br />
             <Center style={{fontSize:"clamp(32px, 4vw, 78px)"}}>
