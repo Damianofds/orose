@@ -36,9 +36,6 @@ const App = () => {
               <div className="App">
                   <Head>
                     <title>✨ Oros&#232; collection💍💎📿</title>
-                    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"></link>
-                    {/* <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Dosis:wght@200&display=swap" rel="stylesheet" /> */}
-                    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
                   </Head>
                   <ReactFullpage
                     navigation
